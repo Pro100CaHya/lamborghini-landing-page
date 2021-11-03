@@ -4,9 +4,144 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/css/style.css">
     <title>LAMBORent</title>
 </head>
 <body>
-    
+    <header class="header">
+        <div class="header__column">
+            <img src="src/img/header-logo-icon.svg" alt="logo" class="header__logo">
+        </div>
+        <div class="header__column">
+            <div class="header__title">LAMBORent</div>
+        </div>
+        <input type="checkbox" class="header__checkbox" id="checkbox-menu">
+        <label class="header__menu" for="checkbox-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <a href="#main" class="nav__link">Main</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#about" class="nav__link">About</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#advantages" class="nav__link">Advantages</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#gallery" class="nav__link">Gallery</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <section class="intro" id="main">
+        <article class="intro__content">
+            <p class="intro__text">- Shall you be taking the Batpod sir?</p>
+            <p class="intro__text">- In the middle of the day Alfred?</p>
+            <p class="intro__text">- The Lamborghini then? Much more subtle.</p>
+        </article>
+        <img class="intro__triangle" src="src/img/intro-triangle.svg">
+    </section>
+    <section class="about" id="about">
+        <h2 class="title">Who we are?</h2>
+        <article class="content">
+            <div class="column">
+                <div class="about__picture">
+                    <svg class="about__svg" width="601" height="531" viewBox="0 0 601 531" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path class="about__svg-fill" d="M221.793 23.6274C269.836 -7.21881 331.454 -7.21886 379.496 23.6273L533.688 122.628C591.259 159.592 615.426 231.588 591.816 295.801L540.715 434.786C519.603 492.207 464.917 530.367 403.736 530.367H197.553C136.373 530.367 81.6865 492.208 60.5741 434.786L9.47339 295.801C-14.1361 231.588 10.03 159.592 67.6011 122.628L221.793 23.6274Z" fill="#520078"/>
+                    </svg> 
+                    <img class="about__car" src="src/img/about-picture-car.png" alt="car">
+                </div>
+            </div>
+            <div class="column column_bottom">
+                <p class="about__text">
+                    We provide Lamborghini brand cars for rent. We have many different popular models, 
+                    among them: Aventador, Urus, Hurakan, etc. We have been on the market since 2012 
+                    and have served more than 5,000 customers during this time. Our managers will select the best offer for you based on your needs.
+                </p>
+            </div>
+        </article>
+    </section>
+    <section class="advantages" id="advantages">
+        <img class="advantages__triangle" src="src/img/advantages-triangle.svg" alt="triangle">
+        <video class="advantages__video" preload="auto" muted autoplay="autoplay" type="video/mp4" loop src="src/video/advantages-video-bg.mp4" autoplay></video>
+        <h2 class="title title_padding">Our advantages</h2>
+        <div class="content">
+            <div class="column column_small">
+                <img class="advantages__logo" src="src/img/advantage-money-icon.svg" alt="price">
+                <h6 class="advantages__title">Price</h6>
+                <p class="advantages__text">The price starts from $300 per hour</p>
+            </div>
+            <div class="column column_small">
+                <img class="advantages__logo" src="src/img/advantage-speed-icon.svg" alt="price">
+                <h6 class="advantages__title">Speed</h6>
+                <p class="advantages__text">We will provide a car within an hour</p>
+            </div>
+            <div class="column column_small">
+                <img class="advantages__logo" src="src/img/advantage-security-icon.svg" alt="price">
+                <h6 class="advantages__title">Security</h6>
+                <p class="advantages__text">Our cars undergo daily maintenance</p>
+            </div>
+            <div class="column column_small">
+                <img class="advantages__logo" src="src/img/advantage-delivery-icon.svg" alt="price">
+                <h6 class="advantages__title">Delivery</h6>
+                <p class="advantages__text">We will deliver the car to a place convenient for you</p>
+            </div>
+        </div>
+    </section>
+    <section class="gallery" id="gallery">
+        <h2 class="title">Gallery</h2>
+        <input type="radio" name="gallery__radio" class="gallery__radio" id="card-1" checked>
+        <input type="radio" name="gallery__radio" class="gallery__radio" id="card-2">
+        <input type="radio" name="gallery__radio" class="gallery__radio" id="card-3">
+        <input type="radio" name="gallery__radio" class="gallery__radio" id="card-4">
+        <input type="radio" name="gallery__radio" class="gallery__radio" id="card-5">
+        <input type="radio" name="gallery__radio" class="gallery__radio" id="card-6"> 
+        <input type="radio" name="gallery__radio" class="gallery__radio" id="card-7">
+        <input type="radio" name="gallery__radio" class="gallery__radio" id="card-8">
+        <div class="gallery__carousel">
+                <div class="gallery__slides">
+                    <div class="gallery__card"></div>
+                    <div class="gallery__card"></div>
+                    <div class="gallery__card"></div>
+                    <div class="gallery__card"></div>
+                    <div class="gallery__card"></div>
+                    <div class="gallery__card"></div>
+                    <div class="gallery__card"></div>
+                    <div class="gallery__card"></div>
+                </div>
+            </div>
+        </div>
+        <div class="gallery__selector">
+            <label class="gallery__label" for="card-1">
+                <img class="gallery__icon gallery-icon_first" src="src/img/gallery-card-1.jpg" alt="car-1">
+            </label>
+            <label class="gallery__label" for="card-2">
+                <img class="gallery__icon" src="src/img/gallery-card-2.jpg" alt="car-2">
+            </label>
+            <label class="gallery__label" for="card-3">
+                <img class="gallery__icon" src="src/img/gallery-card-3.jpg" alt="car-3">
+            </label>
+            <label class="gallery__label" for="card-4">
+                <img class="gallery__icon" src="src/img/gallery-card-4.jpg" alt="car-4">
+            </label>
+            <label class="gallery__label" for="card-5">
+                <img class="gallery__icon" src="src/img/gallery-card-5.jpg" alt="car-5">
+            </label>
+            <label class="gallery__label" for="card-6">
+                <img class="gallery__icon" src="src/img/gallery-card-6.jpg" alt="car-6">
+            </label>
+            <label class="gallery__label" for="card-7">
+                <img class="gallery__icon" src="src/img/gallery-card-7.jpg" alt="car-7">
+            </label>
+            <label class="gallery__label" for="card-8">
+                <img class="gallery__icon" src="src/img/gallery-card-8.jpg" alt="car-8">
+            </label>
+        </div>
+    </section>
 </body>
 </html>

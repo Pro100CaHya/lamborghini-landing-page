@@ -1,0 +1,208 @@
+@media screen and (max-width: 1440px)
+
+    .about
+
+        &__picture
+            width: 540px
+            height: 477px
+
+        &__text
+            font-size: 0.65rem
+            line-height: 1.55
+
+@media screen and (max-width: 1024px)
+
+    .content
+        flex-wrap: wrap
+
+    .gallery
+
+        &__carousel
+            width: 768px
+            height: (768px * 0.75)
+
+        &__icon
+            width: (768px / 8)
+            height: ((768px / 8) * 0.7)
+    
+@media screen and (max-width: 768px)
+        
+    .nav
+        height: 0
+        overflow-y: hidden
+        margin: 0
+        display: block
+
+        &__item
+            display: block
+            padding: 10px 20px
+        
+    .header
+        padding: 0
+
+        &__logo
+            padding: 0 0 0 20px
+
+        &__checkbox
+            &:checked 
+                ~.nav
+                    height: 100%
+                ~.header__menu
+                    span
+                        top: 9px
+                        &:nth-child(1)
+                            transform: rotate(45deg)
+                        &:nth-child(2)
+                            opacity: 0
+                        &:nth-child(3)
+                            transform: rotate(-45deg)
+
+        &__menu
+            display: block
+            float: right
+            margin: 22px
+    
+    .intro
+
+        &__text
+            font-size: 0.8rem
+    
+    .about
+
+        &__picture
+            width: 480px
+            height: 424px
+
+    .gallery
+
+        &__carousel
+            width: 568px
+            height: (568px * 0.75)
+
+        &__selector
+            max-width: 568px
+
+        &__icon
+            width: (568px / 4)
+            height: ((568px / 4) * 0.7)
+
+@media screen and (max-width: 568px)
+
+    .about
+
+        &__picture
+            width: 384px
+            height: 339px
+
+    .gallery
+
+        &__carousel
+            width: 420px
+            height: (420px * 0.75)
+
+        &__selector
+            max-width: 420px
+
+        &__icon
+            width: (420px / 4)
+            height: ((420px / 4) * 0.7)
+
+
+@media screen and (max-width: 425px)
+
+    html
+        font-size: 32px
+
+    .content
+        padding: 15px 0
+
+    .header
+
+        &__logo
+            width: 58px
+            height: 58px
+            padding: 0 0 0 10px
+
+        &__title
+            padding: 0 0 0 15px
+        
+        &__menu
+            margin: 19px 10px 19px
+    
+    .intro
+        
+        &__content
+            padding: 75px 0 0 15px
+
+    .about
+
+        &__picture
+            width: 288px
+            height: 254px
+    
+    .advantages
+
+        &__title
+            font-size: 0.75rem
+        
+        &__text
+            font-size: 0.7rem
+
+    .gallery
+
+        &__carousel
+            width: 320px
+            height: (320px * 0.75)
+
+        &__selector
+            max-width: 320px
+
+        &__icon
+            width: (320px / 4)
+            height: ((320px / 4) * 0.7)
+
+@media screen and (max-width: 320px)
+
+    html
+        font-size: 28px
+
+    .column
+        margin: 7.5px 10px
+    
+    .title
+        padding: 7px 0 10px
+
+        &_padding
+            padding: 18vw 0 0 20px
+    
+    .header
+        
+        &__title
+            display: none
+
+    .about
+    
+        &__picture
+            width: 230px
+            height: 203px
+
+    .gallery
+
+        &__carousel
+            width: 100vw
+            height: (100vw * 0.75)
+
+        &__selector
+            max-width: 100vw
+            padding: 0 0 20px
+
+        &__icon
+            width: (100vw / 4)
+            height: ((100vw / 4) * 0.7)
+
+        
+    
+
+
+
+

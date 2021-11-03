@@ -1,0 +1,46 @@
+.header
+    font-size: 0
+    padding: 0 20px
+    position: fixed
+    z-index: 3
+    overflow-y: hidden
+    width: 100%
+
+    &__column
+        display: inline-block
+        vertical-align: middle
+
+    &__logo
+        width: 64px
+        height: 64px
+
+    &__title
+        font-size: 0.75rem
+        padding: 0 0 0 30px
+
+    &__checkbox
+        display: none
+ 
+    &__menu
+        clear: both
+        cursor: pointer
+        position: relative
+        display: none
+        width: 25px
+        height: 20px
+
+        span
+            width: 25px
+            height: 2px
+            background: #fff
+            position: absolute
+            top: 9px
+            opacity: 1
+            transition: transform 0.5s, opacity 0.5s, top 0.5s
+            
+            &:first-child
+                top: 0
+            
+            &:last-child
+                top: 18px
+

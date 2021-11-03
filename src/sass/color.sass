@@ -1,0 +1,55 @@
+$text-color: #d1d1d1
+$text-shadow: #969696
+$header-bg: #40005e
+$nav-item-bg: #5d0089
+$intro-text-bg: rgba(122, 25, 131, 0.62)
+$main-bg: #210030
+$svg-fill: #660096
+
+.title
+    color: $text-color
+
+.header
+    background: $header-bg
+
+    &__title
+        color: $text-color
+
+.nav
+
+    &__item:hover
+        background: $nav-item-bg
+
+    &__link
+        color: $text-color
+
+.intro
+
+    &__content
+        color: transparent
+        text-shadow: $text-shadow 0 0 15px
+        
+        &:hover, &:active
+            color: $text-color
+            text-shadow: none
+
+.about
+    background: $main-bg
+
+    &__picture
+
+        &:hover, &:active
+
+            .about__svg-fill
+                fill: $svg-fill
+
+    &__text
+        color: $text-color
+
+.advantages
+    
+    color: $text-color
+
+.gallery
+
+    background: $main-bg
