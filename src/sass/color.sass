@@ -4,7 +4,10 @@ $header-bg: #40005e
 $nav-item-bg: #5d0089
 $intro-text-bg: rgba(122, 25, 131, 0.62)
 $main-bg: #210030
+$alter-bg: #370051
 $svg-fill: #660096
+$answer-bg: #4B006f
+$button-bg: #8000bc
 
 .title
     color: $text-color
@@ -47,9 +50,48 @@ $svg-fill: #660096
         color: $text-color
 
 .advantages
-    
     color: $text-color
 
 .gallery
-
     background: $main-bg
+
+.prices
+    background: $alter-bg
+    color: $text-color
+
+    &__card_back
+        background: #56007e
+
+.faq
+    background: $main-bg
+    color: $text-color
+
+    &__question
+        background: $alter-bg
+
+    &__answer
+        background: $answer-bg
+
+.feedback
+    background: $alter-bg
+
+    &__input
+        background: $answer-bg
+        color: $text-color
+
+        &:placeholder
+            color: $text-shadow
+        
+        &:focus
+            background: $svg-fill
+
+    &__button
+        background: $svg-fill
+        color: $text-color
+
+        &:hover
+            background: $button-bg
+
+.footer
+    background: $main-bg
+    color: $text-color

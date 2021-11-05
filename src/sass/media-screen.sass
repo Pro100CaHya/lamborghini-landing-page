@@ -9,24 +9,14 @@
         &__text
             font-size: 0.65rem
             line-height: 1.55
+    
+    .prices
+
+        .content
+            flex-wrap: wrap 
 
 @media screen and (max-width: 1024px)
 
-    .content
-        flex-wrap: wrap
-
-    .gallery
-
-        &__carousel
-            width: 768px
-            height: (768px * 0.75)
-
-        &__icon
-            width: (768px / 8)
-            height: ((768px / 8) * 0.7)
-    
-@media screen and (max-width: 768px)
-        
     .nav
         height: 0
         overflow-y: hidden
@@ -44,23 +34,45 @@
             padding: 0 0 0 20px
 
         &__checkbox
+            
             &:checked 
+                
                 ~.nav
                     height: 100%
+
                 ~.header__menu
-                    span
-                        top: 9px
-                        &:nth-child(1)
-                            transform: rotate(45deg)
-                        &:nth-child(2)
-                            opacity: 0
-                        &:nth-child(3)
-                            transform: rotate(-45deg)
+                        
+                        span
+                            top: 9px
+
+                            &:nth-child(1)
+                                transform: rotate(45deg)
+
+                            &:nth-child(2)
+                                opacity: 0
+
+                            &:nth-child(3)
+                                transform: rotate(-45deg)
 
         &__menu
             display: block
             float: right
             margin: 22px
+
+    .content
+        flex-wrap: wrap
+
+    .gallery
+
+        &__carousel
+            width: 750px
+            height: (750px * 0.75)
+
+        &__icon
+            width: (750px / 8)
+            height: ((750px / 8) * 0.7)
+    
+@media screen and (max-width: 768px)
     
     .intro
 
@@ -76,15 +88,15 @@
     .gallery
 
         &__carousel
-            width: 568px
-            height: (568px * 0.75)
+            width: 550px
+            height: (550px * 0.75)
 
         &__selector
-            max-width: 568px
+            max-width: 550px
 
         &__icon
-            width: (568px / 4)
-            height: ((568px / 4) * 0.7)
+            width: (550px / 4)
+            height: ((550px / 4) * 0.7)
 
 @media screen and (max-width: 568px)
 
@@ -97,16 +109,32 @@
     .gallery
 
         &__carousel
-            width: 420px
-            height: (420px * 0.75)
+            width: 405px
+            height: (405px * 0.75)
 
         &__selector
-            max-width: 420px
+            max-width: 405px
 
         &__icon
-            width: (420px / 4)
-            height: ((420px / 4) * 0.7)
+            width: (405px / 4)
+            height: ((405px / 4) * 0.7)
 
+    .prices
+
+        &__card-img
+            width: 405px
+            height: (405px * (240 / 470))
+    
+    .column
+
+        &_medium
+            width: 405px
+            height: (405px * (240 / 470))
+    
+    .faq
+
+        &__list
+            margin: 12vh 10px 20px
 
 @media screen and (max-width: 425px)
 
@@ -148,18 +176,39 @@
         &__text
             font-size: 0.7rem
 
+        &__logo
+
     .gallery
 
         &__carousel
-            width: 320px
-            height: (320px * 0.75)
+            width: 305px
+            height: (305px * 0.75)
 
         &__selector
-            max-width: 320px
+            max-width: 305px
 
         &__icon
-            width: (320px / 4)
-            height: ((320px / 4) * 0.7)
+            width: (305px / 4)
+            height: ((305px / 4) * 0.7)
+
+    .prices
+
+        &__card-img
+            width: 305px
+            height: (305px * (240 / 470))
+    
+    .column
+
+        &_medium
+            width: 305px
+            height: (305px * (240 / 470))
+
+    .footer
+
+        &__logo
+
+            width: 32px
+            height: 32px
 
 @media screen and (max-width: 320px)
 
@@ -183,26 +232,53 @@
     .about
     
         &__picture
-            width: 230px
-            height: 203px
+            width: 95vw
+            height: 95vw
+
+    .advantages
 
     .gallery
 
         &__carousel
-            width: 100vw
-            height: (100vw * 0.75)
+            width: 95vw
+            height: (95vw * 0.75)
 
         &__selector
-            max-width: 100vw
+            max-width: 95vw
             padding: 0 0 20px
 
         &__icon
-            width: (100vw / 4)
-            height: ((100vw / 4) * 0.7)
-
-        
+            width: (95vw / 4)
+            height: ((95vw / 4) * 0.7)
     
+    .prices
 
+        &__card-img
+            width: 90vw
+            height: (90vw * (240 / 470))
+    
+    .column
 
+        &_medium
+            width: 95vw
+            height: (95vw * (240 / 470))
 
+@media screen and (max-height: 425px)
+ 
+    .nav
+        
+        &__item
+            padding: 5px 20px
 
+        &__link
+            font-size: 0.45rem
+
+@media screen and (max-height: 320px)
+ 
+    .nav
+
+        &__item
+            padding: 3.5px 20px
+
+        &__link
+            font-size: 0.35rem

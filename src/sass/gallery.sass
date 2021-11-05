@@ -29,32 +29,33 @@
         transition: transform 0.5s
 
         div:first-child
-            background: url("../img/gallery-card-1.jpg") 0 0/cover no-repeat
+            background: url("../img/gallery-card-1.webp") 0 0/cover no-repeat
 
         div:nth-child(2)
-            background: url("../img/gallery-card-2.jpg") 0 0/cover no-repeat
+            background: url("../img/gallery-card-2.webp") 0 0/cover no-repeat
 
         div:nth-child(3)
-            background: url("../img/gallery-card-3.jpg") 0 0/cover no-repeat
+            background: url("../img/gallery-card-3.webp") 0 0/cover no-repeat
 
         div:nth-child(4)
-            background: url("../img/gallery-card-4.jpg") 0 0/cover no-repeat
+            background: url("../img/gallery-card-4.webp") 0 0/cover no-repeat
 
         div:nth-child(5)
-            background: url("../img/gallery-card-5.jpg") 0 0/cover no-repeat
+            background: url("../img/gallery-card-5.webp") 0 0/cover no-repeat
 
         div:nth-child(6)
-            background: url("../img/gallery-card-6.jpg") 0 0/cover no-repeat
+            background: url("../img/gallery-card-6.webp") 0 0/cover no-repeat
 
         div:nth-child(7)
-            background: url("../img/gallery-card-7.jpg") 0 0/cover no-repeat
+            background: url("../img/gallery-card-7.webp") 0 0/cover no-repeat
 
         div:nth-child(8)
-            background: url("../img/gallery-card-8.jpg") 0 0/cover no-repeat
+            background: url("../img/gallery-card-8.webp") 0 0/cover no-repeat
 
     &__icon
         width: 100px
         height: 70px
+        transition: filter 0.5s
 
 @for $i from 0 to 8
 
@@ -68,4 +69,13 @@
 
                     .gallery__slides
                         transform: translate($i * (-12.5%), 0)
+                
+                &__selector
+
+                    label:nth-child(#{$i + 1})
+
+                        img
+                            filter: brightness(50%)
+
+
                             
