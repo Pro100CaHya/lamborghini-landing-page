@@ -1,9 +1,5 @@
-# Lamborghini landing page
-Лендинг, написанный с использованием HTML и CSS (без JavaScript). Полученные навыки:
+# Lamborghini Landing Page
 
-- HTML, CSS
-- Адаптивная вёрстка
-- Работа с препроцессором SASS (Live Sass Compiler)
-- Реализация интерактивных конмпонентов (слайдер, выпадающее меню, card flip) без использования JS
+## [Паспорт](docs/PASSPORT.md)
 
-Лендинг доступен по [ссылке](https://pro100cahya.github.io/src/lamborghini-landing/index.html)
+## [Описание](docs/INFO.md)
